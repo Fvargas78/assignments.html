@@ -1,0 +1,44 @@
+body   { 
+    background-color: #A9A9A9;
+    height: 500px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    color: #545454;
+    font-family: "candara", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 2em 2em 4em;
+}
+h1,h2{
+    color: white;
+}
+#wrap {
+overflow:hidden;
+position:relative; /* IE7 needs this */
+}
+#nav {
+float:left;
+position:relative;
+left:50%;
+}
+#nav ul {
+float:left; /* IE6 needs this */
+position:relative;
+left:-50%;
+list-style:none; 
+}
+#nav li {
+float:left;
+}
+#nav a {
+float:left;
+text-decoration:none; 
+padding:0 30px; /* variable width */
+}
+.myDiv {
+  border: 5px outset red;
+  background-color: tomato;    
+  text-align: center;
+}
+ul {display: inline-block; text-align: left;}

@@ -1,44 +1,67 @@
-body   { 
-    background-color: #A9A9A9;
-    height: 500px;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
-    color: #545454;
-    font-family: "candara", Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    margin: 0 auto;
-    max-width: 800px;
-    padding: 2em 2em 4em;
+html {
+    background: #e6e9e9;}
+
+.wrapper {
+  display: flex;  
+  flex-flow: row wrap;
+
 }
-h1,h2{
-    color: white;
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+  font-family: "candara", Helvetica, Arial;
+  border: 5px solid #DEB887;
+  box-shadow: 5px 10px #FFEFD5;
 }
-#wrap {
-overflow:hidden;
-position:relative; /* IE7 needs this */
-}
-#nav {
-float:left;
-position:relative;
-left:50%;
-}
-#nav ul {
-float:left; /* IE6 needs this */
-position:relative;
-left:-50%;
-list-style:none; 
-}
-#nav li {
-float:left;
-}
-#nav a {
-float:left;
-text-decoration:none; 
-padding:0 30px; /* variable width */
-}
-.myDiv {
-  border: 5px outset red;
-  background-color: tomato;    
+
+.header {
+  background: #3CB371;
   text-align: center;
 }
-ul {display: inline-block; text-align: left;}
+
+.footer {
+  background:#3CB371 ;
+  text-align: center;
+}
+
+.main {
+  text-align: left;
+  background: #FFEFD5;
+}
+
+.aside-1 {
+  background: #FFEFD5;
+}
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 0 0; }
+}
+
+@media all and (min-width: 800px) {
+  .main    { flex: 3 0px; }
+  .aside-1 { order: 1; } 
+  .main    { order: 2; }
+  .footer  { order: 4; }
+}
+
+body {
+  padding: 2em;
+}
+h3{
+    text-align: center;
+}
+
+nav { text-align:center; }
+nav ul{list-style-type: none; padding: 0;}
+nav ul li { background-color: #3CB371;
+            text-align: center;
+            display: block;
+            margin-bottom: 30px;
+            width: auto;
+            height: 40px;
+            border-radius: 10px;
+            line-height: 30px;
+            padding: 10px 32px;}
+
+nav ul li a {text-decoration: none; font-weight: bold; color:white;}

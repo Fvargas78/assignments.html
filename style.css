@@ -1,67 +1,54 @@
-html {
-    background: #e6e9e9;}
-
-.wrapper {
-  display: flex;  
-  flex-flow: row wrap;
-
-}
-
-.wrapper > * {
-  padding: 10px;
-  flex: 1 100%;
-  font-family: "candara", Helvetica, Arial;
-  border: 5px solid #DEB887;
-  box-shadow: 5px 10px #FFEFD5;
-}
-
-.header {
-  background: #3CB371;
-  text-align: center;
-}
-
-.footer {
-  background:#3CB371 ;
-  text-align: center;
-}
-
-.main {
-  text-align: left;
-  background: #FFEFD5;
-}
-
-.aside-1 {
-  background: #FFEFD5;
-}
-
-@media all and (min-width: 600px) {
-  .aside { flex: 1 0 0; }
-}
-
-@media all and (min-width: 800px) {
-  .main    { flex: 3 0px; }
-  .aside-1 { order: 1; } 
-  .main    { order: 2; }
-  .footer  { order: 4; }
-}
-
 body {
-  padding: 2em;
+  margin: 3%;
+  padding: 1%%;
+ background: #e6e9e9;}
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu menu main main main main'
+    'footer footer footer footer footer footer';
+  grid-gap: 10px;
+  background-color: #808080;
+  padding: 20px;
 }
-h3{
-    text-align: center;
+h1,h2,h3{
+    color: #696969;
+}
+
+.item4 {
+  height: 50px;
+}
+.grid-container > div {
+  background-color: greenyellow;
+  text-align: center;
+  padding: 20px 0;
+  font-family: "candara", Helvetica, Arial;
+  font-size: 18px;
+}
+
+ul.a {
+  list-style-type: circle;
+    text-align: left;
 }
 
 nav { text-align:center; }
 nav ul{list-style-type: none; padding: 0;}
-nav ul li { background-color: #3CB371;
+nav ul li { background-color:#808080;
             text-align: center;
             display: block;
-            margin-bottom: 30px;
+            margin: 6px 4px;
+            margin-bottom: 40px;
             width: auto;
             height: 40px;
             border-radius: 10px;
             line-height: 30px;
-            padding: 10px 32px;}
+            padding: auto;}
 
 nav ul li a {text-decoration: none; font-weight: bold; color:white;}

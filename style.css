@@ -10,6 +10,7 @@ body {
 
 .grid-container {
   display: grid;
+  grid-template-columns: 200px Auto 200px;
   grid-template-areas:
     'header header header header header header'
     'menu menu main main main main'

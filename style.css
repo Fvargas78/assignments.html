@@ -10,7 +10,7 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 200px Auto 200px;
+  grid-template-columns: 100px 100px 100px;
   grid-template-areas:
     'header header header header header header'
     'menu menu main main main main'
@@ -36,9 +36,16 @@ h1,h2,h3{
 
 ul.a {
   list-style-type: circle;
-    text-align: left;
+  text-align: left;
+  padding: 1px;  
+  padding-left: 40px;
+}  
+li:last-child {
+ margin-bottom: 0px;
 }
-
+li{
+ margin-bottom: 40px;
+}
 nav { text-align:center; }
 nav ul{list-style-type: none; padding: 0;}
 nav ul li { background-color:#808080;
@@ -50,6 +57,7 @@ nav ul li { background-color:#808080;
             height: 40px;
             border-radius: 10px;
             line-height: 30px;
-            padding: auto;}
+}
 
 nav ul li a {text-decoration: none; font-weight: bold; color:white;}
+
